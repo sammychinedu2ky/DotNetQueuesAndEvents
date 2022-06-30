@@ -21,7 +21,7 @@ namespace UsingBackgroundQueues.LongRunning
             {
                 if(_queue.Reader.TryPeek(out var userId))
                 {
-                    await Task.Delay(4000);
+                    await Task.Delay(1000);
                     Console.WriteLine($"The userid == {userId} just got a mail");
                     _queue.Reader.TryRead(out _);
                 }
