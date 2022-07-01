@@ -19,7 +19,7 @@ namespace UsingEvents.Controllers
         public ActionResult<string> sendMail(int userId)
         {
             _publisher.SendMail(userId);
-            return "email will be sent";
+            return "email will be sent controller 2";
           
         }
     }

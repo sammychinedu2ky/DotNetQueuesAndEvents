@@ -21,7 +21,7 @@ namespace UsingBackgroundQueues.Controllers
         public async Task<ActionResult<string>> sendMail(int userId)
         {
             await _queue.Writer.WriteAsync(userId);
-            return  "email will be sent";
+            return  "email will be sent controller 1";
           
         }
     }

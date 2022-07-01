@@ -10,7 +10,6 @@
         {
          
             _publisher.OnPublish += HandleEvent;
-                Console.WriteLine("hello world I'm a background service");
                // Task.Delay(4000).Wait();
             
             return Task.CompletedTask;
